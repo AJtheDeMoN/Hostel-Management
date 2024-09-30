@@ -1,4 +1,4 @@
-# DEP24-P11-HostelManagement
+# Hostel-Management
 
 ## OS Used
 
