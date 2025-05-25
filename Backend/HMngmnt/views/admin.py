@@ -30,7 +30,7 @@ def add_users(request):
                 # print(user)
                 try:
                     user=CustomUser(name=userX[0], email=userX[1], gender=userX[4])
-                    user.set_password('devanshu')
+                    user.set_password('password')
                     user.is_staff=True
                     user.is_active=True
                     user.save()
@@ -41,7 +41,7 @@ def add_users(request):
         elif type=='student':
             for userX in users:
                 user=CustomUser(name=userX[0], email=userX[1], gender=userX[3])
-                user.set_password('devanshu')
+                user.set_password('password')
                 user.is_active=True
                 batch, roll=extract_roll_number_info(userX[1])
                 
@@ -75,7 +75,7 @@ def add_users(request):
         is_hod=request.POST.get('is_hod') 
         if type=='faculty':
             user=CustomUser(name=name, email=email, gender=gender)
-            user.set_password('devanshu')
+            user.set_password('password')
             user.is_staff=True
             user.is_active=True
             user.save()
@@ -83,7 +83,7 @@ def add_users(request):
             faculty.save()
         elif type=='student':
             user=CustomUser(name=name, email=email, gender=gender)
-            user.set_password('devanshu')
+            user.set_password('password')
             user.is_active=True
             # print(department, phone, year)
             batch, roll=extract_roll_number_info(email)

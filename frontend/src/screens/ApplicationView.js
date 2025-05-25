@@ -22,7 +22,7 @@ export default function TableWithStripedColumns() {
   const { comments, setComments, commentSection, setCommentSection, selectedOptions, setSelectedOptions} = useComments();
   const backendUrl = process.env.REACT_APP_BASE_URL;
   const [formData, setFormData] = useState({
-    student: "Devanshu Dhawan",
+    student: "Ajay",
     application_id: "23",
     affiliation: "ITI Ropar",
     faculty: "Dr. Puneet Goyal",

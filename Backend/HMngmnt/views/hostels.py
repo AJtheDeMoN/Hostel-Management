@@ -124,19 +124,19 @@ def add_data(req):
     #     if True:
     #         hostel=Hostel.objects.get(hostel_no=i)
     #         user=CustomUser(name=f'Warden {mp[i]}', email='warden1.'+mp[i].lower()+'@iitrpr.ac.in', is_staff=True)
-    #         user.set_password('devanshu')
+    #         user.set_password('password')
     #         warden=Warden(warden=user, hostel=hostel)
     #         user.save()
     #         warden.save()
     #     else:
     #         hostel=Hostel.objects.get(hostel_no=i)
     #         user=CustomUser(name=f'Warden {mp[i]}', email='warden1.'+mp[i].lower()+'.boys'+'@iitrpr.ac.in', is_staff=True)
-    #         user.set_password('devanshu')
+    #         user.set_password('password')
     #         caretaker=Caretaker(caretaker=user, hostel=hostel)
     #         user.save()
     #         caretaker.save()
     #         user=CustomUser(name=f'Warden {mp[i]}', email='warden1.'+mp[i].lower()+'.girls'+'.@iitrpr.ac.in', is_staff=True)
-    #         user.set_password('devanshu')
+    #         user.set_password('password')
     #         caretaker=Caretaker(caretaker=user, hostel=hostel)
     #         user.save()
 
@@ -148,7 +148,7 @@ def add_data(req):
     #         dep=random.choice(['CSE', 'EE', 'ME', 'CE', 'HSS', 'MNC'])
     #         roll=b[:4]+dep[:2]+b[4:]+str(roll)
     #         user=CustomUser(name=f'Student {_}', email=f'{roll}@iitrpr.ac.in', gender=random.choice(['Male', 'Male', 'Female']))
-    #         user.set_password('devanshu')
+    #         user.set_password('password')
     #         # print(roll, end="  ")
     #         student=Student(student=user, department=dep, student_phone=f'{random.randint(7000000000, 9999999999)}',
     #                         student_roll=roll, student_year=int(b[:4]), student_batch=batch)
@@ -194,7 +194,7 @@ def add_data(req):
     #                     is_staff=True,
     #                     gender=random.choice(['M', 'F'])
     #                     )
-    #     user.set_password('devanshu')
+    #     user.set_password('password')
     #     faculty=Faculty(faculty=user, department=random.choice(['CSE', 'EE', 'ME', 'CE', 'HSS', 'MNC']), 
     #                     faculty_phone=f'{random.randint(7000000000, 9999999999)}', 
     #     )
